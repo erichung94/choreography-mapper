@@ -21,9 +21,7 @@
       "prettier --write",
       "oxlint --deny-warnings"
     ],
-    "*.{json,css,md,yml}": [
-      "prettier --write"
-    ]
+    "*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "react": "^19.2.8",
