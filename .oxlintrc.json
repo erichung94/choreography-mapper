@@ -4,5 +4,19 @@
   "rules": {
     "react/rules-of-hooks": "error",
     "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["src/domain/**"],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": ["react", "react-dom"],
+            "patterns": ["react/*", "react-dom/*", "../components/*", "../store/*"]
+          }
+        ]
+      }
+    }
+  ]
 }
