@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-libary/react'
+import { render, screen } from '@testing-library/react'
 import { expect, it } from 'vitest'
 import { CountGrid } from './CountGrid'
 
